@@ -4,6 +4,7 @@ import useInvoices from "../hooks/useInvoices";
 
 // 1. Los hooks siempre son lo primero que se llama
 // 2. Los hooks nunca se pueden llamar condicionalmente
+// 3. Los hooks deben siempre llamarse en el mismo orden
 const InvoicesPage: NextPage = () => {
   const { error, invoices, loading } = useInvoices();
 
